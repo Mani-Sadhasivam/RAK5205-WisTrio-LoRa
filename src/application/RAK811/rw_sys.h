@@ -6,7 +6,7 @@
 /*!
  * use for trackerboard
  */
-#define TRACKERBOARD
+//#define TRACKERBOARD
 /*
 	use GPS_PPS fuction
 */

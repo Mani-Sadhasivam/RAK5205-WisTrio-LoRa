@@ -52,3 +52,19 @@ https://www.rakwireless.com/en/download/LoRa/WisTrio-LoRa-RAK5205#Hardware_Speci
 
 BTW, there is a very interesting tutorial for RAK5205 Wistrio made by Manivannan Sadhasivam:
 https://github.com/Mani-Sadhasivam/zephyr/blob/96b_wistrio/boards/arm/96b_wistrio/doc/96b_wistrio.rst 
+
+## CMAKE
+
+### Building
+
+```
+$ mkdir build && cd build
+$ cmake -DCMAKE_TOOLCHAIN_FILE=../toolchain.cmake ..
+$ make
+```
+
+### Flashing
+
+```
+$ sudo stm32flash -b 115200 -w lorawan-node.bin -v -g 0x08000000 /dev/ttyUSB0
+```

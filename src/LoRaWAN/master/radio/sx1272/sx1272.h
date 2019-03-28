@@ -15,6 +15,8 @@ Maintainer: Miguel Luis and Gregory Cristian
 #ifndef __SX1272_H__
 #define __SX1272_H__
 
+#ifdef SX1272
+
 #include "sx1272Regs-Fsk.h"
 #include "sx1272Regs-LoRa.h"
 
@@ -398,5 +400,7 @@ void SX1272SetMaxPayloadLength( RadioModems_t modem, uint8_t max );
  * \param [IN] enable if true, it enables a public network
  */
 void SX1272SetPublicNetwork( bool enable );
+
+#endif
 
 #endif // __SX1272_H__

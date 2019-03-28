@@ -15,6 +15,8 @@ Maintainer: Miguel Luis and Gregory Cristian
 #ifndef __SX1272_REGS_FSK_H__
 #define __SX1272_REGS_FSK_H__
 
+#ifdef SX1272
+
 /*!
  * ============================================================================
  * SX1272 Internal registers Address
@@ -1130,5 +1132,7 @@ Maintainer: Miguel Luis and Gregory Cristian
  * RegBitrateFrac
  */
 #define RF_BITRATEFRAC_MASK                         0xF0
+
+#endif // SX1272
 
 #endif // __SX1272_REGS_FSK_H__

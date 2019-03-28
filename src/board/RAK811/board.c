@@ -16,6 +16,7 @@ Maintainer: Andreas Pella (IMST GmbH), Miguel Luis and Gregory Cristian
 #include "stm32l1xx_hal_iwdg.h"
 #include "BME680-board.h"
 #include "rw_sys.h"
+#include "sx1276/sx1276.h"
 
 /*!
  * Potentiometer max and min levels definition

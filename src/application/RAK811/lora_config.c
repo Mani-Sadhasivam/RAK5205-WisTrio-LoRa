@@ -5,7 +5,7 @@
 #include "app.h"
 #include "rw_sys.h"
 
-#define MAX_ARGV        6
+#define LOCAL_MAX_ARGV        6
 
 static int handle_dev_addr(lora_config_t *config, int argc, char *argv[], char *in, cfg_op op);
 static int handle_dev_eui(lora_config_t *config, int argc, char *argv[], char *in, cfg_op op);
@@ -77,7 +77,7 @@ static int parse_args(char* str, char* argv[], char **end)
     while(*ch != '\0') {
         i++;
         /*Check if length exceeds*/
-        if (i > MAX_ARGV) {
+        if (i > LOCAL_MAX_ARGV) {
             return 0;
         }
 
@@ -155,7 +155,7 @@ static int write_config_string(lora_config_t *config, char *in)
     int i;
     int ret;
     int argc;
-    char *argv[MAX_ARGV];
+    char *argv[LOCAL_MAX_ARGV];
     char *end;
     
     do {

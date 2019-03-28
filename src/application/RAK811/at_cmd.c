@@ -1,6 +1,7 @@
 #include "board.h"
 #include "app.h"
 #include "LoRaMac.h"
+#include "sx1276/sx1276Regs-Fsk.h"
 
 #include "rw_sys.h"
 #include "rw_lora.h"

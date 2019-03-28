@@ -16,9 +16,6 @@ Maintainer: Miguel Luis and Gregory Cristian
 /*
 	*  MACRO DEFINED for different boards and on/off specific function 
 */
-//#define  LORA_HF_BOARD
-//#define  TRACKERBOARD
-
 #include <time.h>
 #include <string.h>
 #include "board.h"
