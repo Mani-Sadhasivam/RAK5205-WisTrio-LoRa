@@ -50,8 +50,11 @@ AU915, KR920 and IN865). <br>
 RAK5205 hardware specification:
 https://www.rakwireless.com/en/download/LoRa/WisTrio-LoRa-RAK5205#Hardware_Specification 
 
-BTW, there is a very interesting tutorial for RAK5205 Wistrio made by Manivannan Sadhasivam:
-https://github.com/Mani-Sadhasivam/zephyr/blob/96b_wistrio/boards/arm/96b_wistrio/doc/96b_wistrio.rst 
+## Zephyr support
+
+Community contributor [Mani](https://github.com/Mani-Sadhasivam) has added upstream Zephyr support for WisTrio board. More information can be found in below link:
+
+https://docs.zephyrproject.org/latest/boards/arm/96b_wistrio/doc/96b_wistrio.html
 
 ## CMAKE
 
